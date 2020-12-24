@@ -10,6 +10,7 @@ function memo() {
       if (XHR.status != 200) {
         alert(`Error ${XHR.status}: ${XHR.statusText}`);
         return null;
+        
       }
       const item = XHR.response.post;
       const list = document.getElementById("list");
